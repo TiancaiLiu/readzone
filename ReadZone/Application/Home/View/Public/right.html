@@ -1,0 +1,36 @@
+<!--主体右侧-->
+<div class="sidebar">
+	<ul class="mypages">
+		<li><a rel="nofollow" target="_blank" class="my-a my-tqq" href="http://t.qq.com"><span><strong>腾讯微博</strong></span>腾讯微博 &raquo;</a></li>
+		<li><a rel="nofollow" target="_blank" class="my-a my-weibo" href="http://weibo.com"><span><strong>新浪微博</strong></span>新浪微博 &raquo;</a></li>
+		<li><a rel="nofollow" target="_blank" class="my-a my-feed" href="http://mail.qq.com"><span><strong>订阅本站</strong></span>订阅本站 &raquo;</a></li>
+		<li><a rel="nofollow" target="_blank" class="my-a my-theme" href="http://qzone.qq.com"><span><strong>腾讯博客</strong></span>腾讯博客 &raquo;</a></li>
+	</ul>
+	<div class="widget widget_categories"><h3 class="widget-tit">文章分类</h3>		
+		<ul>
+			<foreach name='cateres' item='v'>
+				<li class="cat-item cat-item-18">
+					<a href="__MODULE__/Cate/index/id/{$v.id}">{$v.catename}</a>
+				</li>		
+			</foreach>
+		</ul>
+	</div>
+	
+	<div class="widget widget_recent_entries">		
+     	<h3 class="widget-tit">最新发表</h3>		
+        <ul>
+        	<foreach name='article' item='v'>
+			<li>
+				<a href="__MODULE__/Article/index/id/{$v.id}">{$v.title}</a>
+			</li>
+			</foreach>
+		</ul>
+	</div>		
+  	<div class="widget widget_links"><h3 class="widget-tit">友情链接</h3>
+		<ul class='xoxo blogroll'>
+			<foreach name='linkres' item='v'>
+				<li><a href="{$v.url}" rel="friend" target="_blank">{$v.title}</a></li>
+			</foreach>
+		 </ul>
+  	</div>
+ </div>

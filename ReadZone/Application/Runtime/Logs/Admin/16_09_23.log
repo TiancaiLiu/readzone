@@ -1,0 +1,49 @@
+[ 2016-09-23T18:14:46+08:00 ] ::1 /ReadZone/Admin/Admin/system.html
+ERR: 非法操作:system
+
+[ 2016-09-23T19:03:57+08:00 ] ::1 /ReadZone/Admin/Article/lst
+ERR: 1054:Unknown column 'Article.pci' in 'field list'
+ [ SQL语句 ] : SELECT Article.id AS id,Article.title AS title,Article.pci AS pci,Cate.catename AS catename FROM read_article Article LEFT JOIN read_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id DESC LIMIT 0,3  
+
+[ 2016-09-23T19:21:43+08:00 ] ::1 /ReadZone/Admin/Article/__CONTROLLER_/addArticle
+ERR: 非法操作:__CONTROLLER_
+
+[ 2016-09-23T19:21:59+08:00 ] ::1 /ReadZone/Admin/Article/__CONTROLLER_/addArticle
+ERR: 非法操作:__CONTROLLER_
+
+[ 2016-09-23T19:46:26+08:00 ] ::1 /ReadZone/Admin/Article/addArticle
+ERR: Think\Controller:errror方法不存在！
+
+[ 2016-09-23T19:47:21+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:52:12+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:52:13+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:52:13+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:57:18+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:57:21+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:57:52+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T19:59:10+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T20:03:26+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T20:06:39+08:00 ] ::1 /ReadZone/Admin/Article/_
+ERR: 非法操作:_
+
+[ 2016-09-23T22:04:54+08:00 ] ::1 /ReadZone/Admin/Admin/show.html
+ERR: 非法操作:show
+

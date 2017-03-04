@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言板</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/style/style.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/board.css">
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Admin/Public/Css/common.css">
+</head>
+<body>
+    <include file='Public/head' />
+    <!-- 留言界面 -->
+    <div class="wrapper">
+       <div class="content">
+        <div class="message-board">
+         <h3>留言板</h3>
+         <!-- 留白 -->
+         <div class="wardhold">
+             <img src="__PUBLIC__/images/psu.jpg">
+         </div>
+         <!-- 留言板 -->
+         <div class="message-hold">
+            <h3>留言(<span>{$count}</span>)</h3>
+            <foreach name='list' item='v'>
+                <div class="reply">
+                    <div class="userimg">
+                        <img src="__PUBLIC__/images/userpic.png">
+                    </div>
+                    <div class="replyhold">
+                        <h3>{$v.nickname}<span>通过iphone7</span></h3>
+                        <div class="replyword">
+                            <p>{$v.content}</p>
+                        </div>
+                        <div class="clicktab">
+                            <span>{$v.time|date="Y-m-d H:i:s",###}</span>
+                            <!-- <a href="javascript:;" class="replyshow">回复</a>
+                            <a href="javascript:;" class="replyhide">收起</a>
+                            <a href="javascript:;" >送礼</a> -->
+                        </div>
+                        <!-- <div class="replyit">
+                                <div class="replyithold">
+                                     <div class="userimg">
+                                        <img src="__PUBLIC__/images/userpic.png">
+                                     </div>
+                                     <div class="replyhold">
+                                        <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+                                        <div class="replyitword">
+                                            <p>溜得一匹！</p>
+                                        </div>
+                                        <div class="clicktab">
+                                             <span>2016-09-25 16:28 </span>
+                                        </div>
+                                     </div>
+                                </div>                        
+                            <div class="written">
+                                <form action="__CONTROLLER__/reply" method="post">
+                                    <input type="text" placeholder="写下你的回复..." name="content" id="content">
+                                    <input type="hidden" name="pid" value="{$v.id}">
+                                    <input type="submit" value="回复" class="btn btn-primary btn6 mr10">
+                                </form>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </foreach>
+            <!-- 分页 -->
+            <div class="paging">{$page}</div>
+            <div class="writeit">
+                <h3>我要留言</h3>
+                <form action="__CONTROLLER__/add" method="post">
+                    <input type="text" name="content" id="content">
+                    <input type="hidden" name="pid" value="0">
+                    <input class="btn btn-primary btn6 mr10" type="submit" value="发表">
+                </form>
+            </div>
+         </div>
+        </div>
+       </div>
+    <include file='Public/right' />
+    </div>
+    
+    <script type="text/javascript" src="__PUBLIC__/style/reed.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[ 2016-10-13T21:04:14+08:00 ] ::1 /ReadZone/Home/Common/logout
+ERR: 非法操作:logout
+
+[ 2016-10-13T21:18:05+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1146:Table 'read.read_message_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `read_message_view`
+
+[ 2016-10-13T21:18:05+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1146:Table 'read.read_message_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `read_message_view`
+
+[ 2016-10-13T21:18:05+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1146:Table 'read.read_message_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `read_message_view`
+

@@ -1,0 +1,127 @@
+*{text-align:left;}
+.message-board{width:596px;
+	           border:1px solid #f6d8a0;
+	           margin:auto;
+	           background:white;
+	           margin-bottom: 30px;
+	           padding:20px;
+	           float:left;}
+.message-board h3{color:#a97c5f;
+                  line-height:30px;
+                  width:100%;
+                  padding-bottom:10px;
+                  border-bottom:1px solid #f6d8a0}
+.wardhold {width:100%;
+           height:400px;
+           text-align: center}
+.message-hold{width:100%;}           
+.message-hold h3{color:black}      
+.reply{width:100%;
+       overflow:auto;
+       padding:20px 0 20px 0;
+       border-bottom:1px solid #f6d8a0}
+
+.userimg{width:13%;
+	     float:left;
+         text-align:center;} 
+.userimg img{width:60px;height:60px;border-radius:5px;}  
+.replyhold {width:87%;float:left;}  
+.replyhold h3{border:none;color:#a97c5f;}  
+.replyhold h3 span{color:#9b9b9b;font-size:13px;margin-left:10px;} 
+.replyword{width:100%;
+           height:110px;}
+.replyword p{font-size:15px;} 
+.clicktab {width:100%;padding:20px 0 10px 0;}  
+.clicktab a{color:#a97c5f;margin-left:15px;}
+
+.replyit{display:none;}
+.replyithold{width:100%;padding:10px 0 10px 0;border-top:1px solid #f6d8a0;clear:both;} 
+.replyithold img{width:50px;height:50px;border-radius:3px;}  
+.replyitword{width:100%;} 
+.replyhide{display:none;}
+.written{width:100%;} 
+input[type=text]{width:90%;
+				 height: 22px;
+				 padding:6px 12px;
+				 font-size: 14px;
+				 color: #555;
+				 background-color: #fff;
+				 background-image: none;
+				 border: 1px solid #ccc;
+				 border-radius: 4px;
+				 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+input[type=password]{width:347px;
+				 height: 20px;
+				 padding:6px 12px;
+				 font-size: 14px;
+				 color: #555;
+				 background-color: #fff;
+				 background-image: none;
+				 border: 1px solid #ccc;
+				 border-radius: 4px;
+				 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}   
+input[type=submit]{width:70px;
+				   padding: 0px 12px;
+				   margin-bottom: 0;
+				   font-size: 14px;
+				   text-align: center;
+			 	   background-image: none;
+				   border: 1px solid transparent;
+				   border-radius: 4px;
+			       color: #fff;
+                   background-color: #5cb85c;
+                   border-color: #4cae4c;
+				   margin-top:20px;
+				   cursor:pointer;
+					} 
+input[type=text]:focus{border-color:#66afe9;
+	                   box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)} 
+.writeit{width:100%;margin-top:20px;}		
+input[type=submit]:hover{color: #fff;
+						 background-color: #449d44;
+						 border-color: #398439;}	
+.writeit h3{border:none}
+
+/* 登陆注册界面 */
+.inner{position:relative;}	
+.loadview{position:absolute;
+	      right:-225px;
+	      line-height: 20px;
+          padding:12px 0px 8px 0px;}	
+.loginhold,.loadhold{ width:440px;
+			          border-radius:5px;
+			          position:fixed;
+			          padding:30px;
+			          top:50%;
+			          left:50%;
+			          margin-left:-250px;
+			          z-index:2;
+			          background:white;
+			          text-align:center;
+			          display:none;
+			          }
+.loadhold{height:240px;margin-top:-150px;}			          
+.loginhold{height:500px;margin-top:-280px;}			          
+.linelimit{width:100%;margin-top:20px;overflow:hidden;}
+.linelimit span{width:15%;float:left;font-size:15px;line-height:36px;}	
+.linelimit input[type=text]{width:79%;float:right;}
+.filehold{height: 22px;padding:6px 12px;border: 1px solid #ccc;border-radius:4px;position:relative;}
+.filefont{height: 22px;padding:6px 12px;line-height:22px;position:absolute;top:0;left:0;width:100%;z-index:-1}
+.yanzheng{width:35%;float:right;height:34px;border:1px solid black}
+.linelimit input[type=submit]{width:100%;background:#0099cb;border-color:#0099cb;} 	
+.loginhold h3,.loadhold h3{text-align:center;font-size:25px;padding-bottom:16px}			          
+.clickbtn {width:100%;}
+#closeload,#closelogin{display:block;
+					   width:30px;
+					   font-size:30px;
+					   position:absolute;
+					   top:10px;
+					   right:5px;
+					   cursor:pointer;}
+#closeload:hover,#closelogin:hover{color:gray}					   
+#coverpage{width:100%;
+	       height:100%;
+	       position:fixed;
+	       z-index:1;
+	       display:none;
+	       background:rgba(0,0,0,0.5)}					              				 				                            	           

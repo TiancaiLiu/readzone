@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/style/style.css"  />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/board.css">
+<script src="__PUBLIC__/style/jquery.min.js"></script>
+<title>ReadZone阅读网</title>		
+<style type="text/css">
+	img.wp-smiley,
+	img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 .07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+	
+</style>
+<!-- 跳出 -->
+<script type="text/javascript">/*frame*/ 
+     if (top.location != self.location) { top.location=self.location } 
+</script>
+</head>
+<body class="home blog">
+<include file='Public/head' />
+
+<div class="wrapper">
+<div class="content">	
+	<include file='Public/share' />
+		
+		<ul class="excerpt thumb">
+			<foreach name='list' item='v'>
+				<li>
+					<a href="" class="pic"><img src="__ROOT__/{$v.pic}" alt="{$v.title}" /></a>
+					<h2 class="excerpt-tit"><a href="__MODULE__/Article/index/id/{$v.id}" >{$v.title}</a></h2>
+					<p class="excerpt-desc">{$v.desc}</p>
+					<div class="excerpt-time">{$v.time|date='m-d',###}</div>
+				</li>
+			</foreach>
+		</ul>
+		<div class="paging">{$page}</div>
+
+</div>
+<include file='Public/right' />
+</div>
+<include file='Public/footer' />
+<script type="text/javascript" src="__PUBLIC__/style/reed.js"></script>
+<!-- 百度自动推送 -->
+<script>
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+</script>
+</body>
+</html>

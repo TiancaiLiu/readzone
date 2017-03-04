@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/style/style.css"  />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/board.css">
+	<script src="__PUBLIC__/style/jquery.min.js"></script> 
+	<script src="__PUBLIC__/style/post.js"></script>
+	<title>ReadZone阅读网</title>		
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+<!-- 跳出 -->
+<script type="text/javascript">if (top.location != self.location) { top.location=self.location }</script>
+</head>
+<body class="single single-post postid-42805 single-format-standard">
+<include file='Public/head' />
+<div class="wrapper">
+	<div class="content">
+        <div class="meta">
+			<h1 class="meta-tit">{$arts.title}</h1>
+			<p class="meta-info">发表：<a href="__APP__">{$catename}</a> &nbsp;&nbsp; 发表日期：{$arts.time|date='Y-m-d',###} &nbsp;&nbsp; </p>
+		</div>
+
+<!-- 广告代码2 -->
+<div class="entry">
+	<p><img class="aligncenter size-full wp-image-42806" src="__ROOT__{$arts.pic}"  width="630" height="399" srcset="" sizes="(max-width: 630px) 100vw, 630px" /></p>
+	<?php echo htmlspecialchars_decode($arts['content']);?>
+</div>
+
+<div>
+<if condition="$prevs">
+<strong>上一篇：</strong>
+<a class="prev-post icon-right" href="__MODULE__/Article/index/id/{$prevs.id}">
+{$prevs.title}</a>
+<else />
+<strong>上一篇：没有了</strong>
+</if>
+</div>
+
+<div style="margin:10px 0;">
+<if condition="$nexts">
+<strong>下一篇：</strong>
+<a class="next-post" href="__MODULE__/Article/index/id/{$nexts.id}">
+{$nexts.title}</a> 
+<else />
+<strong>下一篇：没有了</strong>
+</if>
+</div>
+
+<include file='Public/share' />
+
+<div class="message-board" style="margin-top:20px;">
+    	 <div class="message-hold">
+    	 	<h3>评论区(<span>10</span>)</h3>
+    	 	<div class="reply">
+    	 		<div class="userimg">
+    	 			<img src="__PUBLIC__/images/userpic.png">
+    	 		</div>
+    	 		<div class="replyhold">
+    	 			<h3>一行白鹭上青天<span>通过iphone7</span></h3>
+    	 			<div class="replyword">
+    	 				<p>溜得一匹！</p>
+    	 			</div>
+    	 			<div class="clicktab">
+    	 				<span>2016-09-25 16:28 </span>
+    	 				<a href="javascript:;" class="replyshow">回复</a>
+    	 				<a href="javascript:;" class="replyhide">收起</a>
+    	 				<a href="javascript:;" >送礼</a>
+    	 			</div>
+    	 			<div class="replyit">
+	    	 			<div class="replyithold">
+	    	 			     <div class="userimg">
+	    	 			        <img src="__PUBLIC__/images/userpic.png">
+	                         </div>
+	                         <div class="replyhold">
+	                            <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+			    	 			<div class="replyitword">
+			    	 				<p>溜得一匹！</p>
+			    	 			</div>
+			    	 			<div class="clicktab">
+	    	 				         <span>2016-09-25 16:28</span>
+	    	 				    </div>
+	                         </div>
+	    	 			</div>
+	    	 			<div class="replyithold">
+	    	 			     <div class="userimg">
+	    	 			        <img src="__PUBLIC__/images/userpic.png">
+	                         </div>
+	                         <div class="replyhold">
+	                            <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+			    	 			<div class="replyitword">
+			    	 				<p>溜得一匹！</p>
+			    	 			</div>
+			    	 			<div class="clicktab">
+	    	 				         <span>2016-09-25 16:28 </span>
+	    	 				    </div>
+	                         </div>
+	    	 			</div>
+	    	 			<div class="written">
+	    	 				<input type="text" placeholder="写下你的回复..."></input>
+	    	 				<input type="button" value="回复"></input>
+	    	 			</div>
+    	 			</div>
+    	 		</div>
+    	 	</div>
+    	 	<div class="reply">
+    	 		<div class="userimg">
+    	 			<img src="__PUBLIC__/images/userpic.png">
+    	 		</div>
+    	 		<div class="replyhold">
+    	 			<h3>一行白鹭上青天<span>通过iphone7</span></h3>
+    	 			<div class="replyword">
+    	 				<p>溜得一匹！</p>
+    	 			</div>
+    	 			<div class="clicktab">
+    	 				<span>2016-09-25 16:28 </span>
+    	 				<a href="javascript:;" class="replyshow">回复</a>
+    	 				<a href="javascript:;" class="replyhide">收起</a>
+    	 				<a href="javascript:;" >送礼</a>
+    	 			</div>
+    	 			<div class="replyit">
+	    	 			<div class="replyithold">
+	    	 			     <div class="userimg">
+	    	 			        <img src="__PUBLIC__/images/userpic.png">
+	                         </div>
+	                         <div class="replyhold">
+	                            <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+			    	 			<div class="replyitword">
+			    	 				<p>溜得一匹！</p>
+			    	 			</div>
+			    	 			<div class="clicktab">
+	    	 				         <span>2016-09-25 16:28 </span>
+	    	 				    </div>
+	                         </div>
+	    	 			</div>
+	    	 			<div class="replyithold">
+	    	 			     <div class="userimg">
+	    	 			        <img src="__PUBLIC__/images/userpic.png">
+	                         </div>
+	                         <div class="replyhold">
+	                            <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+			    	 			<div class="replyitword">
+			    	 				<p>溜得一匹！</p>
+			    	 			</div>
+			    	 			<div class="clicktab">
+	    	 				         <span>2016-09-25 16:28 </span>
+	    	 				    </div>
+	                         </div>
+	    	 			</div>
+	    	 			<div class="written">
+	    	 				<input type="text" placeholder="写下你的回复..."></input>
+	    	 				<input type="button" value="回复"></input>
+	    	 			</div>
+    	 			</div>
+    	 		</div>
+    	 	</div>
+    	 	<div class="reply">
+    	 		<div class="userimg">
+    	 			<img src="__PUBLIC__/images/userpic.png">
+    	 		</div>
+    	 		<div class="replyhold">
+    	 			<h3>一行白鹭上青天<span>通过iphone7</span></h3>
+    	 			<div class="replyword">
+    	 				<p>溜得一匹！</p>
+    	 			</div>
+    	 			<div class="clicktab">
+    	 				<span>2016-09-25 16:28 </span>
+    	 				<a href="javascript:;" class="replyshow">回复</a>
+    	 				<a href="javascript:;" class="replyhide">收起</a>
+    	 				<a href="javascript:;" >送礼</a>
+    	 			</div>
+    	 			<div class="replyit">
+	    	 			<div class="replyithold">
+	    	 			     <div class="userimg">
+	    	 			        <img src="__PUBLIC__/images/userpic.png">
+	                         </div>
+	                         <div class="replyhold">
+	                            <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+			    	 			<div class="replyitword">
+			    	 				<p>溜得一匹！</p>
+			    	 			</div>
+			    	 			<div class="clicktab">
+	    	 				         <span>2016-09-25 16:28 </span>
+	    	 				    </div>
+	                         </div>
+	    	 			</div>
+	    	 			<div class="replyithold">
+	    	 			     <div class="userimg">
+	    	 			        <img src="__PUBLIC__/images/userpic.png">
+	                         </div>
+	                         <div class="replyhold">
+	                            <h3>一行白鹭上青天<span>通过iphone7</span></h3>
+			    	 			<div class="replyitword">
+			    	 				<p>溜得一匹！</p>
+			    	 			</div>
+			    	 			<div class="clicktab">
+	    	 				         <span>2016-09-25 16:28 </span>
+	    	 				    </div>
+	                         </div>
+	    	 			</div>
+	    	 			<div class="written">
+	    	 				<input type="text" placeholder="写下你的回复..."></input>
+	    	 				<input type="button" value="回复"></input>
+	    	 			</div>
+    	 			</div>
+    	 		</div>
+    	 	</div>
+    	 	<!-- 分页 -->
+    	 	<div class="paging">
+
+    	 	</div>
+    	 	<div class="writeit">
+    	 	    <h3>我要评论</h3>
+    	 		<input type="text"></input>
+    	 		<input type="submit" value="发表"></input>
+    	 	</div>
+    	 </div>
+    </div>
+
+</div>
+<include file='Public/right' />
+</div>
+<include file='Public/footer' />
+
+
+<script type="text/javascript" src="__PUBLIC__/style/reed.js"></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</body>
+</html>

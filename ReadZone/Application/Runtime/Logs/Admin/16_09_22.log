@@ -1,0 +1,51 @@
+[ 2016-09-22T18:14:42+08:00 ] ::1 /ReadZone/index.php/Admin/Admin/show
+ERR: 非法操作:show
+
+[ 2016-09-22T18:14:48+08:00 ] ::1 /ReadZone//Admin/Admin/show
+ERR: 非法操作:show
+
+[ 2016-09-22T19:02:44+08:00 ] ::1 /ReadZone/Admin/Admin/Admin/Index/index
+ERR: 非法操作:Admin
+
+[ 2016-09-22T19:03:05+08:00 ] ::1 /ReadZone/Admin/Admin/Admin/Index/index
+ERR: 非法操作:Admin
+
+[ 2016-09-22T19:03:09+08:00 ] ::1 /ReadZone/Admin/Admin/Admin/Index/index
+ERR: 非法操作:Admin
+
+[ 2016-09-22T19:03:46+08:00 ] ::1 /ReadZone/Admin/Admin/show
+ERR: 非法操作:show
+
+[ 2016-09-22T19:05:05+08:00 ] ::1 /ReadZone/Admin/Admin/Application/Admin/Index/
+ERR: 非法操作:Application
+
+[ 2016-09-22T19:23:05+08:00 ] ::1 /ReadZone/Admin/__CONTROLLER/index
+ERR: 无法加载控制器:__CONTROLLER
+
+[ 2016-09-22T19:23:16+08:00 ] ::1 /ReadZone/Admin/__CONTROLLER/index
+ERR: 无法加载控制器:__CONTROLLER
+
+[ 2016-09-22T20:22:21+08:00 ] ::1 /ReadZone/Admin/Index/design.html
+ERR: 非法操作:design
+
+[ 2016-09-22T21:28:46+08:00 ] ::1 /ReadZone/Admin/Admin/search
+ERR: 模板不存在:./Application/Admin/View/Admin/show.html
+
+[ 2016-09-22T22:45:39+08:00 ] ::1 /ReadZone/Admin/Cate/edit
+ERR: Think\Model:crreate方法不存在！
+
+[ 2016-09-22T22:45:59+08:00 ] ::1 /ReadZone/Admin/Cate
+ERR: 非法操作:index
+
+[ 2016-09-22T22:46:01+08:00 ] ::1 /ReadZone/Admin/Cate
+ERR: 非法操作:index
+
+[ 2016-09-22T23:09:43+08:00 ] ::1 /ReadZone/Admin/Cate
+ERR: 非法操作:index
+
+[ 2016-09-22T23:30:37+08:00 ] ::1 /ReadZone/Admin/Article/lst
+ERR: 无法加载控制器:Article
+
+[ 2016-09-22T23:30:47+08:00 ] ::1 /ReadZone/Admin/Article/lst
+ERR: 无法加载控制器:Article
+

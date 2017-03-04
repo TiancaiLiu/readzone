@@ -1,0 +1,28 @@
+[ 2016-10-16T21:08:32+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1054:Unknown column 'level' in 'where clause'
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( level=1 ) ORDER BY Message.id DESC LIMIT 0,4  
+
+[ 2016-10-16T21:08:32+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1054:Unknown column 'level' in 'where clause'
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( level=1 ) ORDER BY Message.id DESC LIMIT 0,4  
+
+[ 2016-10-16T21:08:32+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1054:Unknown column 'level' in 'where clause'
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( level=1 ) ORDER BY Message.id DESC LIMIT 0,4  
+
+[ 2016-10-16T21:08:32+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1054:Unknown column 'level' in 'where clause'
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( level=1 ) ORDER BY Message.id DESC LIMIT 0,4  
+
+[ 2016-10-16T21:22:21+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '==0 ) ORDER BY Message.id DESC LIMIT 0,4' at line 1
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( pid==0 ) ORDER BY Message.id DESC LIMIT 0,4  
+
+[ 2016-10-16T21:22:21+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '==0 ) ORDER BY Message.id DESC LIMIT 0,4' at line 1
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( pid==0 ) ORDER BY Message.id DESC LIMIT 0,4  
+
+[ 2016-10-16T21:22:21+08:00 ] ::1 /ReadZone/Message/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '==0 ) ORDER BY Message.id DESC LIMIT 0,4' at line 1
+ [ SQL语句 ] : SELECT Message.id AS id,Message.content AS content,Message.time AS time,User.nickname AS nickname FROM read_message Message LEFT JOIN read_user User ON Message.uid=User.id WHERE ( pid==0 ) ORDER BY Message.id DESC LIMIT 0,4  
+

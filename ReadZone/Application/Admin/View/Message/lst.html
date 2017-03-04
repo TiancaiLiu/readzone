@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/Js/libs/modernizr.min.js"></script>
+</head>
+<body>
+<include file="Public/head" />
+<div class="container clearfix">
+    <include file="Public/left" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">留言管理</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="__CONTROLLER__/search" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="70">留言搜索:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" action="" method="post">
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th width="4%" >ID</th>
+                            <th width="55%">留言内容</th>
+                            <th width="5%">级别</th>
+                            <th>留言用户</th>
+                            <th width="15%" >留言时间</th>
+                            <th width="5%">操作</th>
+                        </tr>
+                        <foreach name='list' item='v'>
+                            <tr>
+                                <td width="4%">{$v.id}</td>
+                                <td>{$v.html}{$v.content}</td>
+                                <td>{$v.level}</td>
+                                <td>{$v.nickname}</td>
+                                <td>{$v.time|date='Y-m-d H:i:s',###}</td>
+                                <td>
+                                    <a class="link-del" onclick="return confirm('确定要删除该条留言吗？？？');" href="__CONTROLLER__/del/id/{$v.id}"><i class="icon-font">&#xe037;</i> 删除</a>
+                                </td>
+                            </tr>
+                        </foreach>
+                    </table>
+                    <div class="list-page">{$page}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
